@@ -2,7 +2,7 @@ const url = require('url');
 
 var config = {};
 
-// The PORT used by 
+// The PORT used by
 config.port = 8004;
 config.host = 'proxy.docker';
 
@@ -181,6 +181,12 @@ config.endpoints = {
         host: 'localhost',
         port: config.port,
         appSsl: false
+    },
+    recommendation: {
+	path: 'RECManagement',
+	host: 'localhost',
+	port: config.port,
+	appSsl: false
     }
 };
 
